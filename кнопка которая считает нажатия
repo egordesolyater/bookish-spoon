@@ -1,0 +1,17 @@
+def say_hello():
+  global count
+  count+=1
+  aar['text']=f'{count} нажатий'
+
+count=0
+import tkinter as tk
+a=tk.Tk()
+a.config(bg='#FFEBCD')
+logo=tk.PhotoImage(file="-icon-png-image_3232032.png")
+a.iconphoto(False,logo)
+a.geometry("600x490+100+100")
+a.title("Программа")
+a.resizable(True,False)
+aar=tk.Button(a,text=f'{count} нажатий',command=say_hello)
+aar.pack()
+a.mainloop()
