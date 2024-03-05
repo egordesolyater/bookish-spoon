@@ -1,0 +1,16 @@
+import tkinter as tk
+a=tk.Tk()
+a.config(bg='#FFEBCD')
+logo=tk.PhotoImage(file="-icon-png-image_3232032.png")
+a.iconphoto(False,logo)
+a.geometry("600x490+100+100")
+a.title("Программа")
+a.resizable(True,False)
+rys=tk.Label(a,text="Привет",bg="grey",fg="white",justify=tk.LEFT,height=1,width=100,anchor="n",font=('Канадский слог',40,'italic')).pack()
+eng=tk.Label(a,text="Hello",bg="black",fg="white",justify=tk.RIGHT,height=1,width=100,anchor="w",relief=tk.RAISED,bd=30,font=('Old Italic',40)).pack()
+BRAZ=tk.Label(a,text="OLÁ",bg="#FA8072",fg='white',justify=tk.RIGHT,height=1,width=100,anchor='s',font=('LT Superior',40,'bold')).pack()
+franc=tk.Label(a,text='Bonjour',bg='#008080',fg="grey",anchor="e",height=1,width=100, relief=tk.SUNKEN,bd='40',font=('Greek',40,'bold')).pack()
+kit=tk.Label(a,text='Hallo',bg='#F4A460',fg='white',justify=tk.RIGHT,height=1,width=100,anchor='se',font=('Arial',40,'italic')).pack()
+
+
+a.mainloop()
